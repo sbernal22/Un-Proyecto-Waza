@@ -154,7 +154,117 @@ header {
     height: 120px;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.form_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
 
 .myForm {
-    background: rgb(158, 0, 0);
+    background: rgb(1, 1, 75);
+    color: white;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.myForm h3 {
+    font-size: 1.5rem;
+}
+
+.myForm input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+}
+
+.myForm button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    background: #4f7fff;
+    color: white;
+    border-radius: 4px;
+}
+
+#search_button {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0;
+}
+
+#sCharliemon {
+    width: 42%;
+    padding: 3px;
+}
+
+#error_msg {
+    color: red;
+}
+
+#fav_button {
+    background-color: white;
+    font-size: 1.75rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer_links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_links a:hover {
+    color: #f59e0b;
+}
+
+.footer_info {
+    margin-bottom: 1.5rem;
+}
+
+.footer_info p {
+    margin: 0.5rem 0;
+}
+
+#ultimoParrafo {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    opacity: 0.8;
 }
