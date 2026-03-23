@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="styles.css">
-    <title>Sign up</title>
+    <title>Charliemons</title>
 </head>
 <body>
     <header>
         <div class="header_content">
             <div class="logo_name">
                 <div id="logo">
-                    <a href="index.html">
-                        <img src="logo/logo.png" alt="Charliemons logo">
+                    <a href=".">
+                        <img src="logo/logo.gif" alt="Charliemons logo">
                     </a>
                 </div>
                 <h2 id="page_name">
-                    <a href="index.html">Charliemons</a>
+                    <a href=".">Charliemons</a>
                 </h2>
             </div>
             <nav class="options">
                 <ul id="options">
-                    <li class="itemOption"><a href="index.html">Home</a></li>
+                    <li class="itemOption"><a href=".">Home</a></li>
                     <li class="itemOption"><a href="signup.html">Sign up</a></li>
                     <li class="itemOption"><a href="login.html">Log in</a></li>
                     <li class="itemOption"><a href="fav_charliemons.html">❤️ My Charliemons</a></li>
@@ -29,28 +29,33 @@
             </nav>
         </div>
     </header>
+
+    <section class="hero">
+        <h2>Welcome to the oficial website of Charliemons</h2>
+        <p>Here you'll find information about your favorite Charliemon</p>
+    </section>
+
     <main>
-        <div class="form_container">
-            <form class="myForm">
-            <h3>Sign up</h3>
-            <br>
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <br><br>
-            <label for="password">Your password:</label>
-            <input type="password" name="password" id="password">
-            <br><br>
-            <button type="submit">Sign up</button>
-        </form>
-        </div>
+        <section class="pokedex_container">
+            <h2>Search for your favorite Charliemon</h2>
+            <form>
+                <input type="text" name="sCharliemon" id="sCharliemon" placeholder="Type your charliemon name or id">
+                <button type="submit" id="search_button">Search</button>
+            </form>
+            <p id="error_msg"></p>
+            <div id="charliemons_grid_search" class="grid_layout">
+            </div>
+        </section>
+        <section class="pokedex_container">
+            <h2>Some of our Charliemons</h2>
+            <div id="charliemons_grid" class="grid_layout">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer_content">
             <div class="footer_links">
-                <a href="index.html">Home</a>
+                <a href=".">Home</a>
                 <a href="signup.html">Sign up</a>
                 <a href="login.html">Log in</a>
                 <a href="fav_charliemons.html">My Charliemons</a>
@@ -63,5 +68,6 @@
             <p id="ultimoParrafo">&copy; 2025 Charliemons. All rights reserved.</p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
