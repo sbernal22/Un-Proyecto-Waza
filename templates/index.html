@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="styles.css">
+    <link rel="styleSheet" href="../static/styles.css">
     <title>Charliemons</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
             <div class="logo_name">
                 <div id="logo">
                     <a href=".">
-                        <img src="logo/logo.gif" alt="Charliemons logo">
+                        <img src="../static/logo/logo.gif" alt="Charliemons logo">
                     </a>
                 </div>
                 <h2 id="page_name">
@@ -21,10 +21,10 @@
             </div>
             <nav class="options">
                 <ul id="options">
-                    <li class="itemOption"><a href=".">Home</a></li>
-                    <li class="itemOption"><a href="signup.html">Sign up</a></li>
-                    <li class="itemOption"><a href="login.html">Log in</a></li>
-                    <li class="itemOption"><a href="fav_charliemons.html">❤️ My Charliemons</a></li>
+                    <li class="itemOption"><a href="/">Home</a></li>
+                    <li class="itemOption"><a href="/signup">Sign up</a></li>
+                    <li class="itemOption"><a href="/login">Log in</a></li>
+                    <li class="itemOption"><a href="/fav_charliemons">❤️ My Charliemons</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,11 +55,11 @@
     <footer>
         <div class="footer_content">
             <div class="footer_links">
-                <a href=".">Home</a>
-                <a href="signup.html">Sign up</a>
-                <a href="login.html">Log in</a>
-                <a href="fav_charliemons.html">My Charliemons</a>
-                <a href="contact.html">Contact us</a>
+                <a href="/">Home</a>
+                <a href="/signup">Sign up</a>
+                <a href="/login">Log in</a>
+                <a href="/fav_charliemons">My Charliemons</a>
+                <a href="/contact">Contact us</a>
             </div>
             <div class="footer_info">
                 <p><strong>Charliemons</strong> - The oficial Charliemons website</p>
@@ -68,6 +68,6 @@
             <p id="ultimoParrafo">&copy; 2025 Charliemons. All rights reserved.</p>
         </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="{{ url_for('static', filename='scripts/index.js')}}"></script>
 </body>
 </html>

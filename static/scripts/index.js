@@ -1,4 +1,4 @@
-const grid= document.getElementById("charliemons_grid")
+const grid= document.getElementById("charliemons_grid");
 async function fetchData() {
     const numeros = Array.from({length: 100}, (_, i) => i + 1);
     numeros.sort(() => Math.random() - 0.5);
